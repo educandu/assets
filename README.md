@@ -1,4 +1,4 @@
-# educandu
+# assets
 
 educandu, openmusic.academy and ELMU assets
 

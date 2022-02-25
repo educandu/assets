@@ -1,0 +1,155 @@
+#!/usr/bin/env node
+
+const path = require('path');
+const fse = require('fs-extra');
+const { optimize } = require('svgo');
+const svgToJsx = require('svg-to-jsx');
+
+const filesToConvert = [
+  {
+    componentName: 'AnavisIcon',
+    sourcePath: './plugin-icons/anavis.svg',
+    destinationPath: './output/anavis-icon.js',
+    content: null
+  },
+  {
+    componentName: 'AnnotationIcon',
+    sourcePath: './plugin-icons/anmerkung.svg',
+    destinationPath: './output/annotation-icon.js',
+    content: null
+  },
+  {
+    componentName: 'AudioIcon',
+    sourcePath: './plugin-icons/audio.svg',
+    destinationPath: './output/audio-icon.js',
+    content: null
+  },
+  {
+    componentName: 'ImageTilesIcon',
+    sourcePath: './plugin-icons/bildraster.svg',
+    destinationPath: './output/image-tiles-icon.js',
+    content: null
+  },
+  {
+    componentName: 'ImageIcon',
+    sourcePath: './plugin-icons/bild.svg',
+    destinationPath: './output/image-icon.js',
+    content: null
+  },
+  {
+    componentName: 'DiagramNetIcon',
+    sourcePath: './plugin-icons/diagramm.svg',
+    destinationPath: './output/diagram-net-icon.js',
+    content: null
+  },
+  {
+    componentName: 'EarTrainingIcon',
+    sourcePath: './plugin-icons/gehoerbildung.svg',
+    destinationPath: './output/ear-training-icon.js',
+    content: null
+  },
+  {
+    componentName: 'IframeIcon',
+    sourcePath: './plugin-icons/iframe.svg',
+    destinationPath: './output/iframe-icon.js',
+    content: null
+  },
+  {
+    componentName: 'IntervalTrainerIcon',
+    sourcePath: './plugin-icons/intervalltrainer.svg',
+    destinationPath: './output/interval-trainer-icon.js',
+    content: null
+  },
+  {
+    componentName: 'MarkdownIcon',
+    sourcePath: './plugin-icons/markup.svg',
+    destinationPath: './output/markdown-icon.js',
+    content: null
+  },
+  {
+    componentName: 'AbcNotationIcon',
+    sourcePath: './plugin-icons/notation.svg',
+    destinationPath: './output/abc-notation-icon.js',
+    content: null
+  },
+  {
+    componentName: 'VideoIcon',
+    sourcePath: './plugin-icons/video.svg',
+    destinationPath: './output/video-icon.js',
+    content: null
+  },
+  {
+    componentName: 'QuickTesterIcon',
+    sourcePath: './plugin-icons/wissenstest.svg',
+    destinationPath: './output/quick-tester-icon.js',
+    content: null
+  }
+];
+
+const pipeline = [
+  async function readFile(entry) {
+    entry.content = await fse.readFile(entry.sourcePath, 'utf8');
+    return entry;
+  },
+  function removeUnnecessaryAttributes(entry) {
+    const attrsToRemove = ['id', 'version', 'xmlns', 'xml:space'];
+    entry.content = attrsToRemove.reduce((str, attr) => str.replace(new RegExp(` ${attr}="[^"]*"`, 'g'), ''), entry.content);
+    return entry;
+  },
+  function addNecessaryAttributes(entry) {
+    entry.content = entry.content.replace(/<svg\s/g, '<svg width="1em" height="1em" ');
+    return entry;
+  },
+  function optimizeSvg(entry) {
+    entry.content = optimize(entry.content, {
+      path: entry.sourcePath,
+      multipass: true,
+      plugins: [
+        {
+          name: 'preset-default',
+          params: {
+            overrides: {
+              inlineStyles: {
+                onlyMatchedOnce: false
+              }
+            }
+          }
+        },
+        'removeXMLNS'
+      ]
+    }).data;
+    return entry;
+  },
+  function removeStyles(entry) {
+    entry.content = entry.content.replace(/<style>[^<]*<\/style>/g, '');
+    return entry;
+  },
+  async function convertSvgToJsx(entry) {
+    entry.content = await svgToJsx(entry.content);
+    return entry;
+  },
+  function createReactComponent(entry) {
+    entry.content = [
+      `import React from 'react';`,
+      ``,
+      `function ${entry.componentName}() {`,
+      `  return (`,
+      ...entry.content.replaceAll('\r', '').split('\n').map(line => ' '.repeat(4) + line),
+      `  );`,
+      `}`,
+      ``,
+      `export default ${entry.componentName};`,
+      ``
+    ].join('\n');
+    return entry;
+  },
+  async function writeFile(entry) {
+    await fse.mkdirp(path.dirname(entry.destinationPath));
+    await fse.writeFile(entry.destinationPath, entry.content, 'utf8');
+    return entry;
+  }
+];
+
+Promise.all(filesToConvert.map(entry => {
+  return pipeline.reduce((prev, next) => prev.then(next), Promise.resolve(entry));
+}));
