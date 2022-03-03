@@ -5,10 +5,9 @@
   "engines": {
     "node": "^16.12.0"
   },
-  "author": "",
+  "author": "Educandu Team <team@educandu.dev>",
   "keywords": [],
   "license": "MIT",
-  "author": "Educandu Team <team@educandu.dev>",
   "homepage": "https://github.com/educandu/assets",
   "repository": {
     "type": "git",
@@ -16,6 +15,7 @@
   },
   "devDependencies": {
     "fs-extra": "~10.0.1",
+    "glob": "^7.2.0",
     "svg-to-jsx": "~1.0.4",
     "svgo": "~2.8.0"
   }

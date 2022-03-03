@@ -1,0 +1,93 @@
+#!/usr/bin/env node
+
+const path = require('path');
+const fse = require('fs-extra');
+const { glob } = require('glob');
+const { optimize } = require('svgo');
+const { promisify } = require('util');
+const svgToJsx = require('svg-to-jsx');
+
+function kebabToPascalCase(str) {
+  return str.replace(/\b\w/g, x => x.toUpperCase()).replace(/-/g, '');
+}
+
+async function createEntries() {
+  const iconFiles = await promisify(glob)('./icons/**/*.svg');
+  return iconFiles.map(iconFile => {
+    const sourcePath = path.resolve(iconFile);
+    const fileNameWithoutExtension = path.basename(sourcePath, '.svg');
+    const componentName = kebabToPascalCase(fileNameWithoutExtension) + 'Icon';
+    const destinationPath = path.resolve('./output', `./${fileNameWithoutExtension}-icon.js`);
+    return { componentName, sourcePath, destinationPath, content: null };
+  });
+}
+
+const pipeline = [
+  async function readFile(entry) {
+    entry.content = await fse.readFile(entry.sourcePath, 'utf8');
+    return entry;
+  },
+  function removeUnnecessaryAttributes(entry) {
+    const attrsToRemove = ['id', 'version', 'xmlns', 'xml:space'];
+    entry.content = attrsToRemove.reduce((str, attr) => str.replace(new RegExp(` ${attr}="[^"]*"`, 'g'), ''), entry.content);
+    return entry;
+  },
+  function addNecessaryAttributes(entry) {
+    entry.content = entry.content.replace(/<svg\s/g, '<svg width="1em" height="1em" ');
+    return entry;
+  },
+  function optimizeSvg(entry) {
+    entry.content = optimize(entry.content, {
+      path: entry.sourcePath,
+      multipass: true,
+      plugins: [
+        {
+          name: 'preset-default',
+          params: {
+            overrides: {
+              inlineStyles: {
+                onlyMatchedOnce: false
+              }
+            }
+          }
+        },
+        'removeXMLNS'
+      ]
+    }).data;
+    return entry;
+  },
+  function removeStyles(entry) {
+    entry.content = entry.content.replace(/<style>[^<]*<\/style>/g, '');
+    return entry;
+  },
+  async function convertSvgToJsx(entry) {
+    entry.content = await svgToJsx(entry.content);
+    return entry;
+  },
+  function createReactComponent(entry) {
+    entry.content = [
+      `import React from 'react';`,
+      ``,
+      `function ${entry.componentName}() {`,
+      `  return (`,
+      ...entry.content.replaceAll('\r', '').split('\n').map(line => ' '.repeat(4) + line),
+      `  );`,
+      `}`,
+      ``,
+      `export default ${entry.componentName};`,
+      ``
+    ].join('\n');
+    return entry;
+  },
+  async function writeFile(entry) {
+    await fse.mkdirp(path.dirname(entry.destinationPath));
+    await fse.writeFile(entry.destinationPath, entry.content, 'utf8');
+    return entry;
+  }
+];
+
+createEntries().then(entries => {
+  return Promise.all(entries.map(entry => {
+    return pipeline.reduce((prev, next) => prev.then(next), Promise.resolve(entry));
+  }));
+});
