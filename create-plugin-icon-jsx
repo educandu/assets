@@ -8,79 +8,79 @@ const svgToJsx = require('svg-to-jsx');
 const filesToConvert = [
   {
     componentName: 'AnavisIcon',
-    sourcePath: './plugin-icons/anavis.svg',
+    sourcePath: './icons/plugin-icons/anavis.svg',
     destinationPath: './output/anavis-icon.js',
     content: null
   },
   {
     componentName: 'AnnotationIcon',
-    sourcePath: './plugin-icons/anmerkung.svg',
+    sourcePath: './icons/plugin-icons/anmerkung.svg',
     destinationPath: './output/annotation-icon.js',
     content: null
   },
   {
     componentName: 'AudioIcon',
-    sourcePath: './plugin-icons/audio.svg',
+    sourcePath: './icons/plugin-icons/audio.svg',
     destinationPath: './output/audio-icon.js',
     content: null
   },
   {
     componentName: 'ImageTilesIcon',
-    sourcePath: './plugin-icons/bildraster.svg',
+    sourcePath: './icons/plugin-icons/bildraster.svg',
     destinationPath: './output/image-tiles-icon.js',
     content: null
   },
   {
     componentName: 'ImageIcon',
-    sourcePath: './plugin-icons/bild.svg',
+    sourcePath: './icons/plugin-icons/bild.svg',
     destinationPath: './output/image-icon.js',
     content: null
   },
   {
     componentName: 'DiagramNetIcon',
-    sourcePath: './plugin-icons/diagramm.svg',
+    sourcePath: './icons/plugin-icons/diagramm.svg',
     destinationPath: './output/diagram-net-icon.js',
     content: null
   },
   {
     componentName: 'EarTrainingIcon',
-    sourcePath: './plugin-icons/gehoerbildung.svg',
+    sourcePath: './icons/plugin-icons/gehoerbildung.svg',
     destinationPath: './output/ear-training-icon.js',
     content: null
   },
   {
     componentName: 'IframeIcon',
-    sourcePath: './plugin-icons/iframe.svg',
+    sourcePath: './icons/plugin-icons/iframe.svg',
     destinationPath: './output/iframe-icon.js',
     content: null
   },
   {
     componentName: 'IntervalTrainerIcon',
-    sourcePath: './plugin-icons/intervalltrainer.svg',
+    sourcePath: './icons/plugin-icons/intervalltrainer.svg',
     destinationPath: './output/interval-trainer-icon.js',
     content: null
   },
   {
     componentName: 'MarkdownIcon',
-    sourcePath: './plugin-icons/markup.svg',
+    sourcePath: './icons/plugin-icons/markup.svg',
     destinationPath: './output/markdown-icon.js',
     content: null
   },
   {
     componentName: 'AbcNotationIcon',
-    sourcePath: './plugin-icons/notation.svg',
+    sourcePath: './icons/plugin-icons/notation.svg',
     destinationPath: './output/abc-notation-icon.js',
     content: null
   },
   {
     componentName: 'VideoIcon',
-    sourcePath: './plugin-icons/video.svg',
+    sourcePath: './icons/plugin-icons/video.svg',
     destinationPath: './output/video-icon.js',
     content: null
   },
   {
     componentName: 'QuickTesterIcon',
-    sourcePath: './plugin-icons/wissenstest.svg',
+    sourcePath: './icons/plugin-icons/wissenstest.svg',
     destinationPath: './output/quick-tester-icon.js',
     content: null
   }
