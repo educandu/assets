@@ -17,7 +17,8 @@ async function createEntries() {
     const sourcePath = path.resolve(iconFile);
     const fileNameWithoutExtension = path.basename(sourcePath, '.svg');
     const componentName = kebabToPascalCase(fileNameWithoutExtension) + 'Icon';
-    const destinationPath = path.resolve('./output', `./${fileNameWithoutExtension}-icon.js`);
+    const destinationDir = path.dirname(path.resolve('./output', path.relative('./icons', sourcePath)));
+    const destinationPath = path.resolve(destinationDir, `./${fileNameWithoutExtension}-icon.js`);
     return { componentName, sourcePath, destinationPath, content: null };
   });
 }
