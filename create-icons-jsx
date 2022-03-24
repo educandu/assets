@@ -35,6 +35,8 @@ const pipeline = [
   },
   function addNecessaryAttributes(entry) {
     entry.content = entry.content.replace(/<svg\s/g, '<svg width="1em" height="1em" ');
+    entry.content = entry.content.replace(/\swidth="1000px"\s/g, ' width="1em" ');
+    entry.content = entry.content.replace(/\sheight="1000px"\s/g, ' height="1em" ');
     return entry;
   },
   function optimizeSvg(entry) {
