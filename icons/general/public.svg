@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 26.0.3, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!-- Generator: Adobe Illustrator 26.2.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <svg version="1.1" id="Ebene_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 width="1000px" height="1000px" viewBox="0 0 1000 1000" style="enable-background:new 0 0 1000 1000;" xml:space="preserve">
 <style type="text/css">
@@ -19,7 +19,7 @@
 	.st13{fill:#FFFFFF;stroke:#2F2D7E;stroke-width:30;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
 	.st14{fill:none;stroke:#808080;stroke-width:40;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
 	.st15{fill:none;stroke:#808080;stroke-width:110;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
-	.st16{clip-path:url(#SVGID_00000037665324877349221910000014851228089503715241_);}
+	.st16{clip-path:url(#SVGID_00000036246591327014384720000013861285218352115627_);}
 	.st17{fill:#EAA58D;}
 	.st18{fill:none;stroke:#808080;stroke-width:70;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
 	.st19{fill:none;stroke:#CCCCCC;stroke-width:119.9441;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
@@ -41,18 +41,21 @@
 	.st35{fill:none;stroke:#666666;stroke-width:47.5393;stroke-linecap:round;stroke-miterlimit:10;}
 	.st36{fill:none;stroke:#666666;stroke-width:81.1986;stroke-linecap:round;stroke-miterlimit:10;}
 	.st37{fill:#FFFFFF;stroke:#666666;stroke-width:47.5393;stroke-linecap:round;stroke-miterlimit:10;}
+	.st38{fill:none;stroke:#666666;stroke-width:38.9985;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+	.st39{fill:none;stroke:#666666;stroke-width:25.999;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+	.st40{fill:none;stroke:#666666;stroke-width:38.9985;stroke-linecap:round;stroke-miterlimit:10;}
 </style>
 <g>
-	<path class="st4" d="M523.34,723.64c-191.67,0-355.1-129.13-416.46-184.65c-13.06-11.83-20.56-28.69-20.56-46.27
-		s7.5-34.44,20.56-46.27c61.36-55.52,224.79-184.65,416.46-184.65s355.1,129.12,416.47,184.65l0,0
-		c13.06,11.83,20.56,28.69,20.56,46.27s-7.5,34.44-20.56,46.27C878.45,594.51,715.03,723.64,523.34,723.64z M523.34,307.86
-		c-175.67,0-328.17,120.81-385.57,172.76c-3.48,3.15-5.41,7.45-5.41,12.12s1.92,8.97,5.41,12.12
-		c57.41,51.94,209.9,172.76,385.57,172.76c175.68,0,328.18-120.81,385.58-172.76c3.48-3.15,5.41-7.45,5.41-12.12
-		s-1.92-8.97-5.41-12.12l0,0C851.52,428.67,699.02,307.86,523.34,307.86z"/>
-</g>
-<g>
-	<path class="st4" d="M523.34,654.37c-89.13,0-161.63-72.51-161.63-161.64s72.5-161.64,161.63-161.64s161.64,72.51,161.64,161.64
-		S612.47,654.37,523.34,654.37z M523.34,377.13c-63.73,0-115.59,51.85-115.59,115.6s51.85,115.6,115.59,115.6
-		c63.74,0,115.6-51.85,115.6-115.6S587.09,377.13,523.34,377.13z"/>
+	<path class="st38" d="M403.1,394.8V264.89c0-47.79,43.47-86.67,96.9-86.67c48.64,0,89.02,32.21,95.88,74.03
+		c1.19,7.24,7.25,12.64,14.59,12.64l81.33,0c8.74,0,15.62-7.52,14.87-16.23C697.95,147.53,608.59,67.76,500,67.76
+		c-114.34,0-207.35,88.43-207.35,197.13V394.8H403.1z"/>
+	<g>
+		<path class="st39" d="M445.01,123.68c17.13-5.81,35.58-8.98,54.79-8.98 M336.34,270.09c0-49.1,24.07-92.95,61.59-121.45"/>
+	</g>
+	<path class="st38" d="M776.74,629.11V843.7c0,35.32-28.63,63.94-63.94,63.94H287.21c-35.32,0-63.94-28.63-63.94-63.94l0-420.87
+		c0-15.48,12.55-28.02,28.02-28.02h497.42c15.48,0,28.02,12.55,28.02,28.02v69.86"/>
+	<g>
+		<polyline class="st38" points="593.77,545.69 475.54,728.55 412.15,643.55 		"/>
+	</g>
 </g>
 </svg>
