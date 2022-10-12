@@ -14,9 +14,9 @@
     "url": "https://github.com/educandu/assets"
   },
   "devDependencies": {
+    "@svgr/core": "^6.4.0",
     "fs-extra": "~10.0.1",
     "glob": "^7.2.0",
-    "svg-to-jsx": "~1.0.4",
     "svgo": "~2.8.0"
   }
 }
