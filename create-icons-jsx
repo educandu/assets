@@ -5,7 +5,7 @@ const fse = require('fs-extra');
 const { glob } = require('glob');
 const { optimize } = require('svgo');
 const { promisify } = require('util');
-const svgToJsx = require('svg-to-jsx');
+const { transform } = require('@svgr/core');
 
 function kebabToPascalCase(str) {
   return str.replace(/\b\w/g, x => x.toUpperCase()).replace(/-/g, '');
@@ -64,10 +64,17 @@ const pipeline = [
     return entry;
   },
   async function convertSvgToJsx(entry) {
-    entry.content = await svgToJsx(entry.content);
+    entry.content = await transform(entry.content, { componentName: entry.componentName });
     return entry;
   },
   function createReactComponent(entry) {
+    const svg = entry.content
+      .replaceAll('\r', '')
+      .replaceAll('\n', '')
+      .replace('{...props}', '')
+      .match(/<svg.*<\/svg>/)[0]
+      .replaceAll('><', '>\n<');
+
     entry.content = [
       `import React from 'react';`,
       `import iconNs from '@ant-design/icons';`,
@@ -76,7 +83,7 @@ const pipeline = [
       ``,
       `export function ${entry.componentName}Component() {`,
       `  return (`,
-      ...entry.content.replaceAll('\r', '').split('\n').map(line => ' '.repeat(4) + line),
+      ...svg.split('\n').map(line => ' '.repeat(4) + line),
       `  );`,
       `}`,
       ``,
