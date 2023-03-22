@@ -1,8 +1,20 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!-- Generator: Adobe Illustrator 26.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<svg version="1.1" id="Ebene_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 1000 1000" style="enable-background:new 0 0 1000 1000;" xml:space="preserve">
-<style type="text/css">
+
+<svg
+   version="1.1"
+   id="Ebene_1"
+   x="0px"
+   y="0px"
+   viewBox="0 0 1000 1000"
+   style="enable-background:new 0 0 1000 1000;"
+   xml:space="preserve"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"><defs
+   id="defs843" />
+<style
+   type="text/css"
+   id="style824">
 	.st0{fill:#F2F2F2;stroke:#666666;stroke-width:40;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
 	.st1{fill:#F2F2F2;stroke:#666666;stroke-width:39.8038;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
 	.st2{fill:none;stroke:#666666;stroke-width:39.8038;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
@@ -23,13 +35,50 @@
 	.st17{fill:#EAA58D;}
 	.st18{fill:none;stroke:#808080;stroke-width:70;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
 </style>
-<line class="st13" x1="313.58" y1="807.68" x2="34.57" y2="807.68"/>
-<g>
-	<path class="st13" d="M554.54,761.81l399.92-399.92c16.83-16.83,14.34-46.6-5.56-66.51l-86.34-86.34
-		c-19.9-19.9-49.68-22.39-66.51-5.56L396.13,603.4l-37.55,174.66c-1.85,11.58,9.69,23.13,21.28,21.28L554.54,761.81z"/>
-	<line class="st13" x1="867.42" y1="371.23" x2="582.79" y2="655.87"/>
-	<line class="st13" x1="657.18" y1="509.68" x2="543.91" y2="622.95"/>
-	<path class="st13" d="M444.6,649.41c1.73,1.73,104.57,104.57,104.57,104.57"/>
-	<line class="st13" x1="431.53" y1="785.32" x2="372.6" y2="726.38"/>
+<line
+   class="st13"
+   x1="163.72345"
+   y1="867.67999"
+   x2="20.631668"
+   y2="867.67999"
+   id="line826"
+   style="fill:none;stroke:#666666;stroke-width:37.7953;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1" />
+<g
+   id="g838"
+   transform="matrix(1.255846,0,0,1.255846,-231.55206,-136.40992)">
+	<path
+   class="st13"
+   d="M 554.54,761.81 954.46,361.89 c 16.83,-16.83 14.34,-46.6 -5.56,-66.51 l -86.34,-86.34 c -19.9,-19.9 -49.68,-22.39 -66.51,-5.56 L 396.13,603.4 358.58,778.06 c -1.85,11.58 9.69,23.13 21.28,21.28 z"
+   id="path828"
+   style="stroke:#666666;stroke-opacity:1" />
+	<line
+   class="st13"
+   x1="867.41998"
+   y1="371.23001"
+   x2="582.78998"
+   y2="655.87"
+   id="line830"
+   style="stroke:#666666;stroke-opacity:1" />
+	<line
+   class="st13"
+   x1="657.17999"
+   y1="509.67999"
+   x2="543.90997"
+   y2="622.95001"
+   id="line832"
+   style="stroke:#666666;stroke-width:29.9985;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1" />
+	<path
+   class="st13"
+   d="m 444.6,649.41 c 1.73,1.73 104.57,104.57 104.57,104.57"
+   id="path834"
+   style="stroke:#666666;stroke-opacity:1" />
+	<line
+   class="st13"
+   x1="431.53"
+   y1="785.32001"
+   x2="372.60001"
+   y2="726.38"
+   id="line836"
+   style="stroke:#666666;stroke-opacity:1" />
 </g>
 </svg>

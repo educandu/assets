@@ -1,8 +1,22 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!-- Generator: Adobe Illustrator 26.5.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<svg version="1.1" id="Ebene_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 width="1000px" height="1000px" viewBox="0 0 1000 1000" style="enable-background:new 0 0 1000 1000;" xml:space="preserve">
-<style type="text/css">
+
+<svg
+   version="1.1"
+   id="Ebene_1"
+   x="0px"
+   y="0px"
+   width="1000px"
+   height="1000px"
+   viewBox="0 0 1000 1000"
+   style="enable-background:new 0 0 1000 1000;"
+   xml:space="preserve"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"><defs
+   id="defs843" />
+<style
+   type="text/css"
+   id="style824">
 	.st0{fill:#F2F2F2;stroke:#666666;stroke-width:40;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
 	.st1{fill:#F2F2F2;stroke:#666666;stroke-width:39.8038;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
 	.st2{fill:none;stroke:#666666;stroke-width:39.8038;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
@@ -58,15 +72,48 @@
 	.st52{fill:#F2F2F2;stroke:#666666;stroke-width:26.519;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
 	.st53{fill:#F2F2F2;stroke:#666666;stroke-width:26.519;stroke-linejoin:round;stroke-miterlimit:10;}
 </style>
-<g>
-	<path class="st13" d="M292.26,217.98h415.48c77.22,0,139.81,62.6,139.81,139.81v227.7c0,77.22-62.6,139.81-139.81,139.81l-287.48,0
-		c-0.83,0-1.6,0.32-2.15,0.94c-35.32,39.57-92.48,103.94-109.19,122.76c-1.78,2-5.05,0.83-5.23-1.84l-8.42-119.05
-		c-0.11-1.58-1.43-2.81-3.02-2.81h0c-77.21,0-139.81-62.59-139.81-139.81v-227.7C152.45,280.58,215.04,217.98,292.26,217.98z"/>
-	<g>
-		<line class="st13" x1="264.19" y1="425.5" x2="513.83" y2="425.5"/>
-		<line class="st13" x1="264.19" y1="559.63" x2="735.81" y2="559.63"/>
-		<line class="st13" x1="264.19" y1="490.7" x2="342.39" y2="490.7"/>
-		<line class="st13" x1="414.66" y1="490.7" x2="734.26" y2="490.7"/>
+<g
+   id="g838"
+   transform="matrix(1.3488935,0,0,1.3488935,-174.84082,-213.26286)">
+	<path
+   class="st13"
+   d="m 292.26,217.98 h 415.48 c 77.22,0 139.81,62.6 139.81,139.81 v 227.7 c 0,77.22 -62.6,139.81 -139.81,139.81 H 420.26 c -0.83,0 -1.6,0.32 -2.15,0.94 -35.32,39.57 -92.48,103.94 -109.19,122.76 -1.78,2 -5.05,0.83 -5.23,-1.84 l -8.42,-119.05 c -0.11,-1.58 -1.43,-2.81 -3.02,-2.81 v 0 c -77.21,0 -139.81,-62.59 -139.81,-139.81 v -227.7 c 0.01,-77.21 62.6,-139.81 139.82,-139.81 z"
+   id="path826"
+   style="stroke:#666666;stroke-opacity:1;fill:none;stroke-width:30.00044227;stroke-miterlimit:10;stroke-dasharray:none" />
+	<g
+   id="g836">
+		<line
+   class="st13"
+   x1="264.19"
+   y1="425.5"
+   x2="513.83002"
+   y2="425.5"
+   id="line828"
+   style="stroke:#666666;stroke-opacity:1" />
+		<line
+   class="st13"
+   x1="264.19"
+   y1="559.63"
+   x2="735.81"
+   y2="559.63"
+   id="line830"
+   style="stroke:#666666;stroke-opacity:1" />
+		<line
+   class="st13"
+   x1="264.19"
+   y1="490.70001"
+   x2="342.39001"
+   y2="490.70001"
+   id="line832"
+   style="stroke:#666666;stroke-opacity:1" />
+		<line
+   class="st13"
+   x1="414.66"
+   y1="490.70001"
+   x2="734.26001"
+   y2="490.70001"
+   id="line834"
+   style="stroke:#666666;stroke-opacity:1" />
 	</g>
 </g>
 </svg>
