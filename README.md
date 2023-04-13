@@ -2,6 +2,7 @@
 
 educandu, openmusic.academy and ELMU assets
 
+---
 
 ## OER learning platform for music
 
