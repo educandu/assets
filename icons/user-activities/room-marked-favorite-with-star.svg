@@ -1,22 +1,8 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?xml version="1.0" encoding="utf-8"?>
 <!-- Generator: Adobe Illustrator 26.0.3, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-
-<svg
-   version="1.1"
-   id="Ebene_1"
-   x="0px"
-   y="0px"
-   width="1000px"
-   height="1000px"
-   viewBox="0 0 1000 1000"
-   style="enable-background:new 0 0 1000 1000;"
-   xml:space="preserve"
-   xmlns="http://www.w3.org/2000/svg"
-   xmlns:svg="http://www.w3.org/2000/svg"><defs
-   id="defs929" />
-<style
-   type="text/css"
-   id="style914">
+<svg version="1.1" id="Ebene_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="1000px" height="1000px" viewBox="0 0 1000 1000" style="enable-background:new 0 0 1000 1000;" xml:space="preserve">
+<style type="text/css">
 	.st0{fill:#F2F2F2;stroke:#666666;stroke-width:40;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
 	.st1{fill:#F2F2F2;stroke:#666666;stroke-width:39.8038;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
 	.st2{fill:none;stroke:#666666;stroke-width:39.8038;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
@@ -33,7 +19,7 @@
 	.st13{fill:#FFFFFF;stroke:#2F2D7E;stroke-width:30;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
 	.st14{fill:none;stroke:#808080;stroke-width:40;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
 	.st15{fill:none;stroke:#808080;stroke-width:110;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
-	.st16{clip-path:url(#SVGID_00000090290649904834526680000014744028436302194844_);}
+	.st16{clip-path:url(#SVGID_00000102515328229823831130000017936261404841256370_);}
 	.st17{fill:#EAA58D;}
 	.st18{fill:none;stroke:#808080;stroke-width:70;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
 	.st19{fill:none;stroke:#CCCCCC;stroke-width:119.9441;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
@@ -56,22 +42,23 @@
 	.st36{fill:none;stroke:#666666;stroke-width:81.1986;stroke-linecap:round;stroke-miterlimit:10;}
 	.st37{fill:#FFFFFF;stroke:#666666;stroke-width:47.5393;stroke-linecap:round;stroke-miterlimit:10;}
 </style>
-<g
-   id="g924">
-	<line
-   class="st35"
-   x1="705.84"
-   y1="636.95"
-   x2="705.84"
-   y2="745.08"
-   id="line916" />
-	<path
-   class="st35"
-   d="M702.71,818.11v23.94c0,39.42-31.96,71.38-71.38,71.38H188.28c-39.42,0-71.38-31.96-71.38-71.38v-684.1   c0-39.42,31.96-71.38,71.38-71.38h443.04c39.42,0,71.38,31.96,74.51,71.38v16.04"
-   id="path918" />
-	<path
-   d="m 634.39816,275.73819 a 85.905106,85.905106 0 0 1 71.41579,20.40248 l 0.52974,0.47247 0.4868,-0.42953 a 85.905106,85.905106 0 0 1 67.76482,-20.61721 l 3.52209,0.51542 a 85.905106,85.905106 0 0 1 48.1641,143.28971 l -2.5771,2.64876 -0.68724,0.58702 -106.66553,105.64896 a 14.317518,14.317518 0 0 1 -18.79889,1.17405 l -1.34585,-1.17405 -107.28117,-106.26462 a 85.905106,85.905106 0 0 1 45.47244,-146.25346 z"
-   id="path826-0"
-   style="fill:#666666;fill-opacity:1;stroke:#666666;stroke-width:14.3175;stroke-opacity:1" />
+<g>
+	<g>
+		<path class="st4" d="M794,239.68l35.03,83.55l90.29,7.49c12.48,1.04,17.54,16.6,8.05,24.78l-68.64,59.13l20.78,88.19
+			c2.87,12.19-10.37,21.82-21.08,15.32l-77.45-47.01l-77.45,47.01c-10.71,6.5-23.95-3.12-21.08-15.32l20.78-88.19l-68.64-59.13
+			c-9.49-8.18-4.43-23.75,8.05-24.78l90.29-7.49l35.03-83.55C772.79,228.13,789.16,228.13,794,239.68z"/>
+	</g>
+	<g>
+		<path class="st35" d="M520.14,963.09L91.47,913.43V86.57l428.67-49.66c17.39-2.01,32.68,11.31,32.68,28.49V934.6
+			C552.81,951.78,537.53,965.11,520.14,963.09z"/>
+		<path class="st35" d="M552.81,913.44h187.83c18.63,0,33.73-15.1,33.73-33.73v-73.1"/>
+		<path class="st35" d="M774.37,172.32V120.3c0-18.63-15.11-33.73-33.73-33.73H552.81"/>
+	</g>
+	<g>
+		<ellipse class="st4" cx="439.89" cy="510.55" rx="42.66" ry="50.85"/>
+		<path class="st4" d="M439.89,459.7c-23.56,0-42.66,22.77-42.66,50.85c0,28.09,19.1,50.85,42.66,50.85s42.66-22.77,42.66-50.85
+			C482.55,482.47,463.45,459.7,439.89,459.7L439.89,459.7z"/>
+	</g>
+	<line class="st37" x1="774.37" y1="578.94" x2="774.37" y2="728.28"/>
 </g>
 </svg>
